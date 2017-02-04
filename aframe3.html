@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene inspector="url: https://aframe.io/releases/0.3.0/aframe-inspector.min.js">
+    	<a-assets>
+        <img id="firefoxLogo" src="http://i.imgur.com/zE8V9XM.jpg">
+      </a-assets>
+
+      <a-box src="#firefoxLogo" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+        <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="100" repeat="indefinite"></a-animation>
+      </a-box>
+
+  	  <a-sky color="#accfff"></a-sky>
+      <a-plane rotation="-90 0 0" width="30" height="30"></a-plane>
+    </a-scene>
+  <body>
+</html>
